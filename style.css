@@ -1,10 +1,54 @@
- <style>
-        body { font-family: Arial, sans-serif; margin: 0; }
-        header { background-color: gray; color: white; padding: 10px; font-weight: bold; }
-        .container { display: flex; min-height: 400px; }
-        nav { width: 200px; background-color: #f2f2f2; padding: 10px; }
-        nav a { display: block; padding: 8px 0; text-decoration: none; color: black; }
-        nav a:hover { color: blue; }
-        main { flex: 1; padding: 20px; }
-        h1 { margin-top: 0; }
-    </style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Phân vùng Header: nền xám, chữ trắng, nằm trên cùng */
+header {
+    background-color: gray;
+    color: white;
+    padding: 12px 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Container dùng flex để chia 2 cột */
+.container {
+    display: flex;
+    min-height: 400px;
+}
+
+/* Phân vùng Nav: cột trái rộng 200px, nền xám nhạt */
+nav {
+    width: 200px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+}
+
+/* Các link trong nav xếp dọc, bấm được */
+nav a {
+    display: block;
+    padding: 8px 5px;
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: blue;
+}
+
+/* Phân vùng Main: cột phải tự co giãn */
+main {
+    flex: 1;
+    padding: 20px 30px;
+}
+
+main h1 {
+    margin-top: 0;
+    font-size: 22px;
+}
