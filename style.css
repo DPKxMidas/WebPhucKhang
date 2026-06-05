@@ -1,54 +1,73 @@
-
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* Phân vùng Header: nền xám, chữ trắng, nằm trên cùng */
+body {
+    font-family: "Times New Roman", serif;
+    font-size: 14px;
+}
+
+/* Phân vùng Header: nền xám, chữ "Trang chủ" */
 header {
-    background-color: gray;
+    background-color: #808080;
     color: white;
-    padding: 12px 15px;
+    padding: 8px 12px;
     font-weight: bold;
-    font-size: 18px;
+    border-bottom: 1px solid #666;
 }
 
-/* Container dùng flex để chia 2 cột */
+/* Container chia 2 cột bằng flex */
 .container {
     display: flex;
-    min-height: 400px;
 }
 
-/* Phân vùng Nav: cột trái rộng 200px, nền xám nhạt */
+/* Phân vùng Nav trái: nền xám nhạt */
 nav {
-    width: 200px;
-    background-color: #f2f2f2;
-    padding: 10px;
-    border-right: 1px solid #ddd;
+    width: 180px;
+    background-color: #f0f0f0;
+    border-right: 1px solid #ccc;
+    padding: 10px 0;
+    min-height: 300px;
 }
 
-/* Các link trong nav xếp dọc, bấm được */
+/* Mỗi mục menu xuống dòng */
 nav a {
     display: block;
-    padding: 8px 5px;
+    padding: 6px 12px;
     text-decoration: none;
-    color: #333;
-    margin-bottom: 5px;
+    color: black;
+    font-size: 14px;
 }
 
 nav a:hover {
-    background-color: #ddd;
-    color: blue;
+    background-color: #e0e0e0;
 }
 
-/* Phân vùng Main: cột phải tự co giãn */
+/* Phân vùng Main phải */
 main {
     flex: 1;
-    padding: 20px 30px;
+    padding: 15px 20px;
 }
 
+/* Tiêu đề "Học trực tuyến Công nghệ thông tin" */
 main h1 {
-    margin-top: 0;
-    font-size: 22px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Dòng "Các khóa học:" */
+main p {
+    margin-bottom: 5px;
+}
+
+/* Danh sách 1, 2, 3 thụt vào như ảnh */
+main ol {
+    margin-left: 20px;
+}
+
+main ol li {
+    margin-bottom: 4px;
 }
